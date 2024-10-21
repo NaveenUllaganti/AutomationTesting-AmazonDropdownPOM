@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AmazonDropdownTestSuite" parallel="false">
+	<test name="AmazonDropdownTestCases">
+		<classes>
+			<class name="com.amazon.tests.HomePageTest">
+				<methods>
+					<include name="listAllOptions" />
+					<include name="selectAmazonFreshMeat" />
+					<exclude name="selectByIndex" />
+					<include name="selectByVisibleText" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
